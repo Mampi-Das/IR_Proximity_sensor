@@ -1,7 +1,7 @@
 // IR Proximity Sensor with Arduino
 
-int IRSensor = 2;  // IR sensor connected to pin 9
-int LED = 3;       // LED connected to pin 13
+int IRSensor = 2;  // IR sensor connected to pin 2
+int LED = 3;       // LED connected to pin 3
 
 void setup() {
   Serial.begin(115200);  // Start serial communication
