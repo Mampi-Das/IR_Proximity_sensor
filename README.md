@@ -1,100 +1,123 @@
-# IR_Proximity_sensor
-Arduino based IR proximity sensor project
-# 🔍 IR Proximity Sensor Project
+# IR Proximity Sensor using Arduino Uno
 
-## 📌 Overview
+## 📌 Project Overview
 
-This project demonstrates the fundamental working and application of an Infrared (IR) Proximity Sensor for object detection. The system is designed to sense the presence of nearby objects without any physical contact and provide a simple visual indication of detection.
+This project demonstrates real-time object detection using an **IR (Infrared) Proximity Sensor** interfaced with an **Arduino Uno**. The system detects the presence of nearby objects without physical contact and provides visual feedback through an LED indicator.
 
-The project is aimed at beginners to help them understand sensor-based interfacing, basic electronics, and real-time detection systems in an intuitive and practical way.
+The project introduces the fundamentals of sensor interfacing, object detection, and embedded system applications using Arduino.
 
 ---
 
-## 🎯 Objective
+## 🎯 Objectives
 
-The primary objective of this project is to:
+- To understand the working principle of an IR proximity sensor.
+- To interface the IR sensor with Arduino Uno.
+- To detect nearby objects in real time.
+- To study basic sensing and automation applications using microcontrollers.
 
-* Understand the working principle of IR sensors
-* Learn how proximity detection systems operate
-* Explore real-time sensing and response mechanisms
-* Build a foundation for more advanced embedded and automation projects
+---
+
+## 🛠️ Components Used
+
+- Arduino Uno
+- IR Proximity Sensor Module
+- LED
+- Resistor
+- Jumper Wires
+- USB Cable
+- Arduino IDE
+
+---
+
+## 🔌 Circuit Connections
+
+| Component | Arduino Uno Pin |
+|------------|----------------|
+| VCC | 5V |
+| GND | GND |
+| OUT | D2 |
+| LED (+) | D3 |
+| LED (-) | GND (through resistor) |
+
+---
+
+## 📷 Hardware Setup
+
+![Hardware Setup](Images/Hardware_Setup_IR.jpeg)
+
+*Figure 1: Hardware implementation of the IR proximity sensor system.*
+
+---
+
+## 🔧 Circuit Diagram
+
+![Circuit Diagram](Images/Circuit_Diagram_IR.jpeg)
+
+*Figure 2: Circuit diagram showing the interfacing between the IR proximity sensor and Arduino Uno.*
+
+---
+
+## 📽️ Project Demo
+
+📹 [Watch the Project Demonstration on Google Drive](https://drive.google.com/file/d/1bzxHwdVecfeh7Z4J2Zq-vjy3P_nyEgKq/view?usp=drivesdk)
+
+---
+
+## 💻 Arduino Program
+
+The Arduino code used in this project continuously reads the sensor output and controls the LED based on object detection. When an object is detected within the sensing range, the LED turns ON; otherwise, it remains OFF.
+
+🔗 **Source Code:** [IR_Proximity_Sensor.ino](Arduino_code/IR_Proximity.ino)
 
 ---
 
 ## ⚙️ Working Principle
 
-An IR proximity sensor works based on the principle of infrared light reflection.
+The IR proximity sensor consists of an infrared transmitter and receiver. The transmitter emits infrared rays, which are reflected when they strike a nearby object.
 
-The sensor consists of two main parts:
-
-* **IR Transmitter (IR LED):** Emits infrared light
-* **IR Receiver (Photodiode/Phototransistor):** Detects reflected light
-
-When an object comes within the sensing range, the emitted infrared rays strike the object and reflect back toward the receiver. The receiver detects this reflected signal and converts it into an electrical signal.
-
-Based on this signal:
-
-* The system identifies the presence of an object
-* A corresponding output action is triggered (such as an indicator turning ON)
-
-This process happens almost instantly, enabling real-time object detection.
+The receiver detects the reflected infrared light and generates a corresponding output signal. The Arduino reads this signal and activates the LED whenever an object is detected within the sensor's range.
 
 ---
 
-## ✨ Key Features
+## 📈 Results
 
-* Contactless object detection
-* Fast response time
-* Simple and cost-effective implementation
-* Beginner-friendly design
-* Reliable for short-range sensing applications
+The system successfully detected nearby objects and provided real-time visual indication through the LED. The LED turned ON when an object entered the sensing range and turned OFF when the object moved away.
 
 ---
 
 ## 🚀 Applications
 
-IR proximity sensors are widely used in various real-world systems, such as:
-
-* Obstacle detection systems
-* Automatic doors and smart entry systems
-* Line-following robots
-* Industrial automation
-* Security and surveillance systems
-* Touchless switches and devices
+- Obstacle detection systems
+- Automatic doors
+- Line-following robots
+- Industrial automation
+- Smart security systems
+- Touchless sensing applications
 
 ---
 
-## 📚 Learning Outcomes
+## 🔍 Key Learnings
 
-Through this project, the following concepts are understood:
-
-* Basics of sensor technology
-* Infrared signal transmission and reception
-* Real-time detection systems
-* Practical implementation of embedded systems
-* Fundamental idea of automation
+- Interfacing sensors with Arduino Uno.
+- Understanding IR-based object detection.
+- Implementing real-time sensing systems.
+- Gaining hands-on experience with embedded systems.
 
 ---
 
-## 🌱 Future Scope
+## 🚀 Future Enhancements
 
-This project can be further enhanced by:
-
-* Integrating with IoT for remote monitoring
-* Adding sound or display alerts
-* Expanding detection range and accuracy
-* Using multiple sensors for advanced robotics applications
+- Integration with IoT platforms for remote monitoring.
+- Addition of buzzer or display alerts.
+- Development of obstacle avoidance systems.
+- Use of multiple sensors for wider coverage.
 
 ---
 
 ## 👩‍💻 Author
 
-**Mampi Das**
-B.Tech, Electrical Engineering
-National Institute of Technology, Agartala
+**Mampi Das**  
+B.Tech in Electrical Engineering  
+National Institute of Technology Agartala
 
----
-
-## 🌸 Note
-
-This project is developed as a beginner-level implementation to build a strong conceptual understanding of proximity sensing and its applications in modern engineering systems.
+The project was developed as part of academic learning and practical experimentation in sensor interfacing and embedded systems.
