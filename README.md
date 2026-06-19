@@ -40,7 +40,13 @@ The project introduces the fundamentals of sensor interfacing, object detection,
 | LED (-) | GND (through resistor) |
 
 ---
+## 🔧 Circuit Diagram
 
+![Circuit Diagram](IR_Proximity_circuit.jpeg)
+
+*Figure 2: Circuit diagram showing the interfacing between the IR proximity sensor and Arduino Uno.*
+
+---
 ## 📷 Hardware Setup
 
 ![Hardware Setup](IR_Proximity_photo.jpeg)
@@ -49,13 +55,7 @@ The project introduces the fundamentals of sensor interfacing, object detection,
 
 ---
 
-## 🔧 Circuit Diagram
 
-![Circuit Diagram](IR_Proximity_circuit.jpeg)
-
-*Figure 2: Circuit diagram showing the interfacing between the IR proximity sensor and Arduino Uno.*
-
----
 
 ## 📽️ Project Demo
 
