@@ -43,8 +43,7 @@ The project introduces the fundamentals of sensor interfacing, object detection,
 
 ## 📷 Hardware Setup
 
-![Hardware Setup](IR_Proximity_sensor
-/IR_Proximity_photo.jpeg)
+![Hardware Setup](IR_Proximity_sensor/IR_Proximity_photo.jpeg)
 
 *Figure 1: Hardware implementation of the IR proximity sensor system.*
 
@@ -52,8 +51,7 @@ The project introduces the fundamentals of sensor interfacing, object detection,
 
 ## 🔧 Circuit Diagram
 
-![Circuit Diagram](IR_Proximity_sensor
-/IR_Proximity_circuit.jpeg)
+![Circuit Diagram](IR_Proximity_sensor/IR_Proximity_circuit.jpeg)
 
 *Figure 2: Circuit diagram showing the interfacing between the IR proximity sensor and Arduino Uno.*
 
@@ -69,8 +67,7 @@ The project introduces the fundamentals of sensor interfacing, object detection,
 
 The Arduino code used in this project continuously reads the sensor output and controls the LED based on object detection. When an object is detected within the sensing range, the LED turns ON; otherwise, it remains OFF.
 
-🔗 **Source Code:** [IR_Proximity_Sensor.ino](IR_Proximity_sensor
-/proximity.ino)
+🔗 **Source Code:** [IR_Proximity_Sensor.ino](IR_Proximity_sensor/proximity.ino)
 
 ---
 
